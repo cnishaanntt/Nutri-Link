@@ -115,8 +115,6 @@ app.get('/go',async(req, res) =>{
 
 // Run local server on port 3000.
 const port = process.env.PORT || 3000;
-const server = https.createServer(app);
-      
-server.listen(port, function () {
-  console.log('Server running at https://127.0.0.1:' + port + '/');
+const server = app.listen(port, function () {
+  console.log('Server running at http://127.0.0.1:' + port + '/');
 });
