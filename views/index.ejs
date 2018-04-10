@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <p class="lead">NUTRILINK</p>
+      </div>
+
+      <% if (authorize_url) { %>
+        <p><%= authorize_url %></p>
+      <a href="<%= authorize_url %>" class="btn btn-warning">Login with genome</a>
+      <% } %>
+
+      <% if (reports.length > 0) { %>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Genetic insights</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (let report of reports) { %>
+          <tr>
+            <th scope="row"><%= report.phenotype.display_name %></th>
+            <td><%= report.summary.text %></td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+      <% } %>
+
+    </div>
+  </body>
+</html>
