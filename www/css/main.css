@@ -67,6 +67,17 @@ a {
   background-image: url(/img/background.png);
 }
 
+.panel-resizable {
+    resize: horizontal;
+    overflow: auto
+}
+
+.btn {
+	    white-space: normal !important;
+	    word-wrap: break-word !important;
+        text-align: left;
+	}
+
 .qr{ 
     max-width: 80%;
     max-height: 80%; 

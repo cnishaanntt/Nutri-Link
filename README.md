@@ -1,4 +1,4 @@
-## `express`
+## `NutriLink`
 
 ## How to run
 
@@ -31,6 +31,17 @@ then, visit `http://127.0.0.1:3000`
 
 See https://genomelink.io/developers/docs/tutorial-oauth-example/
 
+## Live
+
+http://nutrilink.herokuapp.com/
+
 ## Requirements
 
 Node >= 8.9.0
+
+## Citations
+```
+U.S. Department of Agriculture, Agricultural Research Service. 20xx. USDA National Nutrient Database for Standard Reference, Release . Nutrient Data Laboratory Home Page, http://www.ars.usda.gov/nutrientdata 
+
+U.S. Department of Agriculture, Agricultural Research Service. 20xx. USDA Branded Food Products Database . Nutrient Data Laboratory Home Page, http://ndb.nal.usda.gov
+```
