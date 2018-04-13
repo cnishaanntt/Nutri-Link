@@ -1,0 +1,20 @@
+{
+  "name": "GENOME-LINK-Example-Node-Express-App",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "ejs": "latest",
+    "express": "latest",
+    "express-session": "^1.15.6",
+    "genomelink-node": "latest",
+    "request": "latest",
+    "https": "*",
+    "fs": "*",
+    "pug": "*",
+    "path": "*",
+    "table-scraper": "*"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

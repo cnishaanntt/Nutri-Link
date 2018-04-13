@@ -1,0 +1,166 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 65px; /* space for the top nav bar */
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+}
+
+
+hr {
+    border-top: 1px solid #ffffff;
+    opacity: 0;
+}
+
+h1,h6 {
+    color: dimgrey;
+    font-family: "Century Gothic";
+}
+
+
+li,ul {
+    list-style: none;
+}
+
+a {
+    color: dimgray;
+}
+
+
+
+
+
+.iconimg {
+   -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:transform .8s ease-in-out;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.iconimg:hover {
+  -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover {
+    transform: scale(1.2);
+}
+
+.navbar{
+    background-color:white;
+    color: white;
+}
+
+
+.panel-default > .panel-heading {
+  background-color: white;
+  color: white;
+  background-image: url(/img/background.png);
+}
+
+.panel-resizable {
+    resize: horizontal;
+    overflow: auto
+}
+
+.btn {
+	    white-space: normal !important;
+	    word-wrap: break-word !important;
+        text-align: left;
+	}
+
+.qr{ 
+    max-width: 80%;
+    max-height: 80%; 
+    display: block;
+    margin: 0 auto;
+}
+
+.QRcodeDocButton {
+    background-image: url(/img/qrb.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.QRcodePrintButton {
+    background-image: url(/img/print.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.NextButton {
+    background-image: url(/img/next.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.UserButton {
+    background-image: url(/img/user.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-white{
+    color:white;
+}
+
+.btn-white:hover {
+    color:white;
+    transform: scale(1.2);
+}
+
+.btn-center{
+    display: flex;
+    justify-content: center;
+}
+
+.toolbarNavigatorButton {
+    background-image: url(/img/Navigator.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.PCitem{
+    cursor: pointer;
+    background: none;
+    color: #FFFFFF;
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@keyframes moveleft{
+    from {
+        margin-left: 300px;
+        z-index:0;
+    }
+    to {
+        margin-left: 0px;
+        z-index:-1;
+    }
+}
+@keyframes moveright{
+    from {
+        margin-left: 0px;
+        z-index:-1;
+    }
+    to {
+        margin-left: 300px;
+        z-index:0;
+    }
+}
